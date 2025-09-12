@@ -276,10 +276,10 @@ frame_progress = 0.683269
 speed_scale = 1.5
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
-limit_left = -2400
-limit_top = -1350
-limit_right = 2400
-limit_bottom = 1350
+zoom = Vector2(1.5, 1.5)
+limit_left = -1600
+limit_top = -900
+limit_right = 1600
+limit_bottom = 900
 limit_smoothed = true
 position_smoothing_enabled = true
