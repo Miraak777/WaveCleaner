@@ -16,6 +16,7 @@ func _ready() -> void:
 	max_health = base_max_health
 	health = max_health
 	$Shoot.projectile_speed = 200
+	$Shoot.damage = 5
 
 func _process(delta: float) -> void:
 	handle_idle_animation()

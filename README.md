@@ -24,6 +24,7 @@ WaveCleaner is a game in survival-like genre. Created for training purposes and 
 ### Параметры врагов
 #### Паук
 - Урон - 5
+- Максимальное здоровье - 10
 - Период нанесения урона - 1
 - Скорость передвижения - 30
 - Стоимость - 1

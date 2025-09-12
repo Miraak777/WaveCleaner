@@ -3,9 +3,14 @@ extends CharacterBody2D
 @export var player: CharacterBody2D
 @export var move_speed: float = 30
 @export var damage: float = 5
+@export var max_health: float = 10
 @export var dealing_damage_cooldown_time: float = 1
 
+var health: float 
 var dealing_damage_cooldown_time_left: float = 0
+
+func _ready() -> void:
+	health = max_health
 
 func _process(delta: float) -> void:
 	handle_move()
@@ -27,3 +32,8 @@ func deal_damage_to_player() -> void:
 func handle_cooldown(delta: float) -> void:
 	if dealing_damage_cooldown_time_left > 0:
 		dealing_damage_cooldown_time_left -= delta
+
+func take_damage(damage) -> void:
+	health -= damage
+	if health <= 0:
+		queue_free()
