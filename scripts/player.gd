@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@onready var move_speed: float = 200
+@export var move_speed: float = 200
 
 var is_moving: bool = false
 
