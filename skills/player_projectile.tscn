@@ -1,22 +1,22 @@
 [gd_scene load_steps=9 format=3 uid="uid://dpv2afnhy1bjq"]
 
-[ext_resource type="Texture2D" uid="uid://jr0glw6aqa25" path="res://assets/player/projectile.png" id="1_3lo8f"]
-[ext_resource type="Script" uid="uid://do0egpod5i8nr" path="res://scripts/player_projectile.gd" id="1_fj0h8"]
+[ext_resource type="Script" uid="uid://do0egpod5i8nr" path="res://skills/player_projectile.gd" id="1_7x2hb"]
+[ext_resource type="Texture2D" uid="uid://jr0glw6aqa25" path="res://assets/player/projectile.png" id="2_42pv6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fj0h8"]
-atlas = ExtResource("1_3lo8f")
+atlas = ExtResource("2_42pv6")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_828af"]
-atlas = ExtResource("1_3lo8f")
+atlas = ExtResource("2_42pv6")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_agcu7"]
-atlas = ExtResource("1_3lo8f")
+atlas = ExtResource("2_42pv6")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rwpo4"]
-atlas = ExtResource("1_3lo8f")
+atlas = ExtResource("2_42pv6")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1opoe"]
@@ -46,7 +46,7 @@ radius = 8.0
 texture_filter = 1
 collision_layer = 0
 collision_mask = 2
-script = ExtResource("1_fj0h8")
+script = ExtResource("1_7x2hb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_1opoe")
