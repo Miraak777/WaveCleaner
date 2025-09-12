@@ -15,6 +15,7 @@ func _ready() -> void:
 	move_speed = base_move_speed
 	max_health = base_max_health
 	health = max_health
+	$Shoot.projectile_speed = 200
 
 func _process(delta: float) -> void:
 	handle_idle_animation()
@@ -39,6 +40,7 @@ func handle_move_animation() -> void:
 
 func _physics_process(delta: float) -> void:
 	handle_move()
+	handle_shoot()
 
 func handle_move() -> void:
 	velocity = Vector2.ZERO
@@ -49,6 +51,13 @@ func handle_move() -> void:
 		is_moving = false
 	velocity = direction * move_speed
 	move_and_slide()
+
+func handle_shoot() -> void:
+	if Input.is_key_pressed(KEY_F):
+		$Shoot/Timer.start()
+	elif Input.is_key_pressed(KEY_G):
+		$Shoot/Timer.stop()
+		
 
 func take_damage(damage) -> void:
 	health -= damage
