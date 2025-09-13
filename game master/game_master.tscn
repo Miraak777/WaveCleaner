@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckodr6kgsx17l"]
+
+[ext_resource type="Script" uid="uid://dh6a2fk7rh2e3" path="res://game master/game_master.gd" id="1_25xlt"]
+
+[node name="Game Master" type="Node2D"]
+script = ExtResource("1_25xlt")
+
+[node name="WaveTimer" type="Timer" parent="."]
+process_callback = 0
+autostart = true
+
+[node name="StageTimer" type="Timer" parent="."]
+process_callback = 0
+autostart = true
+
+[connection signal="timeout" from="WaveTimer" to="." method="_on_wave_timer_timeout"]

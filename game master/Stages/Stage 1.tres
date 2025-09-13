@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="StageData" load_steps=7 format=3 uid="uid://divtrcaqdi5wv"]
+
+[ext_resource type="Script" uid="uid://wguboneqd5dd" path="res://game master/StageData.gd" id="1_5d5r6"]
+[ext_resource type="Script" uid="uid://cbxadsjja0m6y" path="res://game master/WaveData.gd" id="2_4vpb0"]
+[ext_resource type="Script" uid="uid://cswt748typmsk" path="res://game master/EnemySpawnData.gd" id="3_mfnjl"]
+[ext_resource type="PackedScene" uid="uid://dipxuitfpy1ab" path="res://enemies/spider.tscn" id="4_bla2y"]
+
+[sub_resource type="Resource" id="Resource_4x8w4"]
+script = ExtResource("3_mfnjl")
+enemy = ExtResource("4_bla2y")
+min_count = 2
+max_count = 5
+metadata/_custom_type_script = "uid://cswt748typmsk"
+
+[sub_resource type="Resource" id="Resource_1pfgj"]
+script = ExtResource("2_4vpb0")
+enemies = Array[ExtResource("3_mfnjl")]([SubResource("Resource_4x8w4")])
+metadata/_custom_type_script = "uid://cbxadsjja0m6y"
+
+[resource]
+script = ExtResource("1_5d5r6")
+waves = Array[ExtResource("2_4vpb0")]([SubResource("Resource_1pfgj")])
+metadata/_custom_type_script = "uid://wguboneqd5dd"

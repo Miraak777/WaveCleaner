@@ -62,6 +62,5 @@ func handle_shoot() -> void:
 
 func take_damage(damage) -> void:
 	health -= damage
-	print(health)
 	if health < 0:
 		player_died.emit()
