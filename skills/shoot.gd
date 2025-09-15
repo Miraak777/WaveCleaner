@@ -13,7 +13,6 @@ func _process(delta: float) -> void:
 	if is_ready:
 		var target: Node2D = find_target()
 		if target:
-			print("shoot")
 			shoot(target)
 			is_ready = false
 			$Timer.start(cooldown)
@@ -21,11 +20,9 @@ func _process(delta: float) -> void:
 func init_skill(ui_position) -> void:
 	$CanvasLayer/Icon.global_position = ui_position
 	$CanvasLayer/Icon.show()
-	print("inited")
 	is_ready = true
 
 func _on_timer_timeout() -> void:
-	print("ready")
 	is_ready = true
 
 func find_target() -> Node2D:
