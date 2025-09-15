@@ -53,19 +53,19 @@ position = Vector2(74, -3)
 
 [node name="HealthBar" type="TextureProgressBar" parent="."]
 layout_mode = 0
-offset_left = 214.0
-offset_top = 318.0
-offset_right = 282.0
-offset_bottom = 321.0
+offset_left = 374.0
+offset_top = 498.0
+offset_right = 442.0
+offset_bottom = 501.0
 value = 100.0
 texture_progress = ExtResource("3_en2x2")
 
 [node name="XPBar" type="TextureProgressBar" parent="."]
 layout_mode = 0
-offset_left = 358.0
-offset_top = 318.0
-offset_right = 426.0
-offset_bottom = 321.0
+offset_left = 518.0
+offset_top = 498.0
+offset_right = 586.0
+offset_bottom = 501.0
 value = 100.0
 fill_mode = 1
 texture_progress = ExtResource("4_7ihmi")
@@ -73,10 +73,10 @@ texture_progress = ExtResource("4_7ihmi")
 [node name="LevelLabel" type="Label" parent="."]
 texture_filter = 1
 layout_mode = 0
-offset_left = 310.0
-offset_top = 310.0
-offset_right = 329.0
-offset_bottom = 333.0
+offset_left = 470.0
+offset_top = 490.0
+offset_right = 489.0
+offset_bottom = 513.0
 theme = SubResource("Theme_7ihmi")
 theme_override_fonts/font = ExtResource("5_en2x2")
 theme_override_font_sizes/font_size = 12
