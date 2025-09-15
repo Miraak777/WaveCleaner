@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dkyqursaxfr01"
-path="res://.godot/imported/ui_skillbar.png-61cadbbfb424dd885d2cd42976a0467c.ctex"
+uid="uid://sww6ivite7aq"
+path="res://.godot/imported/ui_xpbar.png-0617ca5d2b857ba16eda101e304e7fc8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/ui_skillbar.png"
-dest_files=["res://.godot/imported/ui_skillbar.png-61cadbbfb424dd885d2cd42976a0467c.ctex"]
+source_file="res://assets/ui/ui_xpbar.png"
+dest_files=["res://.godot/imported/ui_xpbar.png-0617ca5d2b857ba16eda101e304e7fc8.ctex"]
 
 [params]
 

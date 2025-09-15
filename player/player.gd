@@ -1,11 +1,9 @@
 extends CharacterBody2D
 
-@export var base_move_speed: float = 200
-@export var base_max_health: float = 100
+@export var move_speed: float = 200
+@export var max_health: float = 100
 @export var skills: Dictionary[int, Node2D] = {}
 
-var move_speed: float
-var max_health: float
 var health: float
 
 var is_moving: bool = false
@@ -13,8 +11,6 @@ var is_moving: bool = false
 signal player_died
 
 func _ready() -> void:
-	move_speed = base_move_speed
-	max_health = base_max_health
 	health = max_health
 
 func _process(delta: float) -> void:
@@ -65,5 +61,6 @@ func add_skill(skill_scene: Resource, skill_position: int) -> void:
 
 func take_damage(damage) -> void:
 	health -= damage
+	$CanvasLayer/HUD.update_health(health / max_health * 100)
 	if health < 0:
 		player_died.emit()
