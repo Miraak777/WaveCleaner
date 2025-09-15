@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://ciogdts3gadbl"]
+
+[ext_resource type="Script" uid="uid://bcrybdmhjtf3s" path="res://ui/hud.gd" id="1_546lt"]
+[ext_resource type="Texture2D" uid="uid://4sl0nkxjh0v0" path="res://assets/ui/ui_skillbar.png" id="1_rbyyf"]
+
+[node name="HUD" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_546lt")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_top = -32.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="UiSkillbar" type="Sprite2D" parent="Panel"]
+texture = ExtResource("1_rbyyf")
+
+[node name="SkillMarker1" type="Marker2D" parent="Panel"]
+position = Vector2(-106, -3)
+
+[node name="SkillMarker2" type="Marker2D" parent="Panel"]
+position = Vector2(-70, -3)
+
+[node name="SkillMarker3" type="Marker2D" parent="Panel"]
+position = Vector2(-34, -3)
+
+[node name="SkillMarker4" type="Marker2D" parent="Panel"]
+position = Vector2(2, -3)
+
+[node name="SkillMarker5" type="Marker2D" parent="Panel"]
+position = Vector2(38, -3)
+
+[node name="SkillMarker6" type="Marker2D" parent="Panel"]
+position = Vector2(74, -3)

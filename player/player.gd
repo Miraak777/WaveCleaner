@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var base_move_speed: float = 200
 @export var base_max_health: float = 100
+@export var skills: Dictionary[int, Node2D] = {}
 
 var move_speed: float
 var max_health: float
@@ -15,8 +16,6 @@ func _ready() -> void:
 	move_speed = base_move_speed
 	max_health = base_max_health
 	health = max_health
-	$Shoot.projectile_speed = 200
-	$Shoot.damage = 5
 
 func _process(delta: float) -> void:
 	handle_idle_animation()
@@ -41,7 +40,6 @@ func handle_move_animation() -> void:
 
 func _physics_process(delta: float) -> void:
 	handle_move()
-	handle_shoot()
 
 func handle_move() -> void:
 	velocity = Vector2.ZERO
@@ -53,12 +51,17 @@ func handle_move() -> void:
 	velocity = direction * move_speed
 	move_and_slide()
 
-func handle_shoot() -> void:
-	if Input.is_key_pressed(KEY_F):
-		$Shoot/Timer.start()
-	elif Input.is_key_pressed(KEY_G):
-		$Shoot/Timer.stop()
-		
+func add_skill(skill_scene: Resource, skill_position: int) -> void:
+	var skill = skill_scene.instantiate()
+	if skills.get(skill_position):
+		remove_child(skills[skill_position])
+		skills[skill_position] = skill
+		add_child(skill)
+		skill.init_skill($CanvasLayer/HUD.marker_list[skill_position].global_position)
+	else:
+		skills[skill_position] = skill
+		add_child(skill)
+		skill.init_skill($CanvasLayer/HUD.marker_list[skill_position].global_position)
 
 func take_damage(damage) -> void:
 	health -= damage

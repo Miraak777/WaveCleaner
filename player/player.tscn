@@ -1,11 +1,10 @@
-[gd_scene load_steps=42 format=3 uid="uid://cgba5yo5yv5u5"]
+[gd_scene load_steps=41 format=3 uid="uid://cgba5yo5yv5u5"]
 
 [ext_resource type="Script" uid="uid://bcdk0ya234jpw" path="res://player/player.gd" id="1_dqkch"]
 [ext_resource type="Texture2D" uid="uid://dmjn8bmhgu18l" path="res://assets/player/Death.png" id="1_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://643etivgg1wv" path="res://assets/player/Idle.png" id="2_dqkch"]
 [ext_resource type="Texture2D" uid="uid://dcegcbft0qfux" path="res://assets/player/Run.png" id="3_qlg0r"]
-[ext_resource type="PackedScene" uid="uid://70j2v8do78sm" path="res://skills/shoot.tscn" id="5_qlg0r"]
-[ext_resource type="PackedScene" uid="uid://dpv2afnhy1bjq" path="res://skills/player_projectile.tscn" id="6_tuyoq"]
+[ext_resource type="PackedScene" uid="uid://ciogdts3gadbl" path="res://ui/hud.tscn" id="7_boad6"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tuyoq"]
 radius = 7.0
@@ -265,6 +264,10 @@ texture_filter = 1
 motion_mode = 1
 script = ExtResource("1_dqkch")
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="CanvasLayer" instance=ExtResource("7_boad6")]
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -1)
 shape = SubResource("CapsuleShape2D_tuyoq")
@@ -284,6 +287,3 @@ limit_right = 1600
 limit_bottom = 900
 limit_smoothed = true
 position_smoothing_enabled = true
-
-[node name="Shoot" parent="." instance=ExtResource("5_qlg0r")]
-projectile_scene = ExtResource("6_tuyoq")
