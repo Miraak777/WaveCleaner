@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkyqursaxfr01"
-path="res://.godot/imported/ui_skillbar.png-61cadbbfb424dd885d2cd42976a0467c.ctex"
+path="res://.godot/imported/ui_skillbar.png-2047893fc3d58b163d1ecc168342a493.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/ui_skillbar.png"
-dest_files=["res://.godot/imported/ui_skillbar.png-61cadbbfb424dd885d2cd42976a0467c.ctex"]
+source_file="res://Assets/UI/ui_skillbar.png"
+dest_files=["res://.godot/imported/ui_skillbar.png-2047893fc3d58b163d1ecc168342a493.ctex"]
 
 [params]
 

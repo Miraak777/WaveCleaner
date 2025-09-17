@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6ao27sndyno0"]
+
+[ext_resource type="Script" uid="uid://dqret6vpy4knq" path="res://ui/death_popup.gd" id="1_fe7q6"]
+[ext_resource type="Texture2D" uid="uid://dxj35m8037l2a" path="res://Assets/UI/popup_panel.png" id="1_pvkur"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pvkur"]
+
+[node name="Death Popup" type="Panel"]
+process_mode = 3
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fe7q6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_pvkur")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -54.0
+offset_top = -21.5
+offset_right = 54.0
+offset_bottom = 21.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "You Died"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Game Over"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+process_mode = 3
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pvkur")
+text = "Back To Menu"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

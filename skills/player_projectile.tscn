@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://dpv2afnhy1bjq"]
 
-[ext_resource type="Script" uid="uid://do0egpod5i8nr" path="res://skills/player_projectile.gd" id="1_7x2hb"]
-[ext_resource type="Texture2D" uid="uid://jr0glw6aqa25" path="res://assets/player/projectile.png" id="2_42pv6"]
+[ext_resource type="Script" uid="uid://do0egpod5i8nr" path="res://Skills/player_projectile.gd" id="1_7x2hb"]
+[ext_resource type="Texture2D" uid="uid://jr0glw6aqa25" path="res://Assets/Player/projectile.png" id="2_42pv6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fj0h8"]
 atlas = ExtResource("2_42pv6")

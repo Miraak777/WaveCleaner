@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://dipxuitfpy1ab"]
 
-[ext_resource type="Script" uid="uid://cgrp2ysk7sdjj" path="res://enemies/spider.gd" id="1_ttiju"]
-[ext_resource type="Texture2D" uid="uid://bnmjjrkcnfgf5" path="res://assets/enemies/spider.png" id="2_ttiju"]
+[ext_resource type="Script" uid="uid://cgrp2ysk7sdjj" path="res://Enemies/spider.gd" id="1_ttiju"]
+[ext_resource type="Texture2D" uid="uid://bnmjjrkcnfgf5" path="res://Assets/Enemies/spider.png" id="2_ttiju"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sdkqh"]
 radius = 9.0

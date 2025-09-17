@@ -67,5 +67,5 @@ func update_marker_list() -> void:
 func take_damage(damage) -> void:
 	health -= damage
 	$CanvasLayer/HUD.update_health(health / max_health * 100)
-	if health < 0:
+	if health <= 0:
 		player_died.emit()

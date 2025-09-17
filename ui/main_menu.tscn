@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://154y316ycpo8"]
 
-[ext_resource type="Script" uid="uid://ts8px7ytoa8a" path="res://ui/main_menu.gd" id="1_t7e0r"]
+[ext_resource type="Script" uid="uid://ts8px7ytoa8a" path="res://UI/main_menu.gd" id="1_t7e0r"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gl0q7"]
 
@@ -27,14 +27,6 @@ offset_right = 52.0
 offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="ContinueButton" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 20
-theme_override_styles/focus = SubResource("StyleBoxEmpty_gl0q7")
-disabled = true
-text = "Continue"
-flat = true
 
 [node name="NewRunButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://uv8ss0uhthqi"
-path="res://.godot/imported/skill_shoot.png-05b66fce8a9a8ec017647f14163ee662.ctex"
+path="res://.godot/imported/skill_shoot.png-42e2817af77e6939af29ea650f375644.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/skill_shoot.png"
-dest_files=["res://.godot/imported/skill_shoot.png-05b66fce8a9a8ec017647f14163ee662.ctex"]
+source_file="res://Assets/UI/skill_shoot.png"
+dest_files=["res://.godot/imported/skill_shoot.png-42e2817af77e6939af29ea650f375644.ctex"]
 
 [params]
 

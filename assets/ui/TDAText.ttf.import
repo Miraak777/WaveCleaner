@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://civnwdqf4bmxj"
-path="res://.godot/imported/TDAText.ttf-975c689da6ad54e50ac28add620b57ac.fontdata"
+path="res://.godot/imported/TDAText.ttf-a3a59b307e94f76e3c05594cfe151414.fontdata"
 
 [deps]
 
-source_file="res://assets/ui/TDAText.ttf"
-dest_files=["res://.godot/imported/TDAText.ttf-975c689da6ad54e50ac28add620b57ac.fontdata"]
+source_file="res://Assets/UI/TDAText.ttf"
+dest_files=["res://.godot/imported/TDAText.ttf-a3a59b307e94f76e3c05594cfe151414.fontdata"]
 
 [params]
 

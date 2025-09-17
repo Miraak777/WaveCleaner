@@ -20,7 +20,6 @@ func _process(delta: float) -> void:
 func init_skill(ui_position) -> void:
 	$CanvasLayer/Icon.global_position = ui_position
 	$CanvasLayer/Icon.show()
-	print(ui_position)
 	is_ready = true
 
 func _on_timer_timeout() -> void:

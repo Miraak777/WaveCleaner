@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="StageData" load_steps=7 format=3 uid="uid://divtrcaqdi5wv"]
 
-[ext_resource type="Script" uid="uid://wguboneqd5dd" path="res://game master/StageData.gd" id="1_5d5r6"]
-[ext_resource type="Script" uid="uid://cbxadsjja0m6y" path="res://game master/WaveData.gd" id="2_4vpb0"]
-[ext_resource type="Script" uid="uid://cswt748typmsk" path="res://game master/EnemySpawnData.gd" id="3_mfnjl"]
-[ext_resource type="PackedScene" uid="uid://dipxuitfpy1ab" path="res://enemies/spider.tscn" id="4_bla2y"]
+[ext_resource type="Script" uid="uid://wguboneqd5dd" path="res://Game Master/StageData.gd" id="1_5d5r6"]
+[ext_resource type="Script" uid="uid://cbxadsjja0m6y" path="res://Game Master/WaveData.gd" id="2_4vpb0"]
+[ext_resource type="Script" uid="uid://cswt748typmsk" path="res://Game Master/EnemySpawnData.gd" id="3_mfnjl"]
+[ext_resource type="PackedScene" uid="uid://dipxuitfpy1ab" path="res://Enemies/spider.tscn" id="4_b2nhv"]
 
 [sub_resource type="Resource" id="Resource_4x8w4"]
 script = ExtResource("3_mfnjl")
-enemy = ExtResource("4_bla2y")
+enemy = ExtResource("4_b2nhv")
 min_count = 2
 max_count = 5
 metadata/_custom_type_script = "uid://cswt748typmsk"

@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://ciogdts3gadbl"]
 
-[ext_resource type="Script" uid="uid://bcrybdmhjtf3s" path="res://ui/hud.gd" id="1_546lt"]
-[ext_resource type="Texture2D" uid="uid://dkyqursaxfr01" path="res://assets/ui/ui_skillbar.png" id="1_rbyyf"]
-[ext_resource type="Texture2D" uid="uid://bjkxw24fppq6v" path="res://assets/ui/ui_healthbar.png" id="3_en2x2"]
-[ext_resource type="Texture2D" uid="uid://sww6ivite7aq" path="res://assets/ui/ui_xpbar.png" id="4_7ihmi"]
+[ext_resource type="Script" uid="uid://bcrybdmhjtf3s" path="res://UI/hud.gd" id="1_546lt"]
+[ext_resource type="Texture2D" uid="uid://dkyqursaxfr01" path="res://Assets/UI/ui_skillbar.png" id="1_rbyyf"]
+[ext_resource type="Texture2D" uid="uid://bjkxw24fppq6v" path="res://Assets/UI/ui_healthbar.png" id="3_en2x2"]
+[ext_resource type="Texture2D" uid="uid://sww6ivite7aq" path="res://Assets/UI/ui_xpbar.png" id="4_7ihmi"]
 
 [sub_resource type="Theme" id="Theme_7ihmi"]
 
