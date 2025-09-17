@@ -34,9 +34,7 @@ WaveCleaner is a game in survival-like genre. Created for training purposes and 
 - Время между волнами - 5
 ### Этапы
 #### Этап 1 
-Вероятности появления врагов
-- Паук - 1
-Количество врагов
+#### Волны
 - Паук - 2-5
 ### Параметры врагов
 #### Паук
