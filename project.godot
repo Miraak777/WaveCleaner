@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="WaveCleaner"
-run/main_scene="uid://cclhsexasx2sq"
+run/main_scene="uid://154y316ycpo8"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -23,6 +23,11 @@ window/size/window_width_override=1152
 window/size/window_height_override=648
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
+
+[gui]
+
+theme/custom_font="uid://ba2bjnh8n8yxn"
+theme/default_font_antialiasing=0
 
 [input]
 

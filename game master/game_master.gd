@@ -1,3 +1,4 @@
+class_name GameMaster
 extends Node2D
 @export var player: CharacterBody2D
 @export var stages: Array[StageData]
@@ -26,7 +27,7 @@ func _on_wave_timer_timeout() -> void:
 			var enemy: CharacterBody2D = spawn_data.enemy.instantiate()
 			enemy.global_position = get_random_position()
 			enemy.player = player
-			owner.add_child(enemy)
+			get_tree().current_scene.add_child(enemy)
 
 func calculate_spawn_rect() -> void:
 	var screen_rect: Rect2 = get_tree().current_scene.get_viewport().get_visible_rect()

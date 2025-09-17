@@ -1,3 +1,4 @@
+class_name Player
 extends CharacterBody2D
 
 @export var move_speed: float = 200
@@ -48,6 +49,7 @@ func handle_move() -> void:
 	move_and_slide()
 
 func add_skill(skill_scene: Resource, skill_position: int) -> void:
+	update_marker_list()
 	var skill = skill_scene.instantiate()
 	if skills.get(skill_position):
 		remove_child(skills[skill_position])
@@ -58,6 +60,9 @@ func add_skill(skill_scene: Resource, skill_position: int) -> void:
 		skills[skill_position] = skill
 		add_child(skill)
 		skill.init_skill($CanvasLayer/HUD.marker_list[skill_position].global_position)
+
+func update_marker_list() -> void:
+	$CanvasLayer/HUD.update_marker_list()
 
 func take_damage(damage) -> void:
 	health -= damage

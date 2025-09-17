@@ -1,9 +1,9 @@
 extends Control
 
 var marker_list: Array[Marker2D] 
-var health_list: Array[TextureProgressBar]
 
-func _ready() -> void:
+
+func update_marker_list() -> void:
 	marker_list = [
 	$SkillPanel/SkillMarker1,
 	$SkillPanel/SkillMarker2,
