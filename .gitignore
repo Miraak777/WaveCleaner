@@ -1,6 +1,7 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+/Export
 test_zone.tscn
 test_zone.gd
 test_zone.gd.uid
