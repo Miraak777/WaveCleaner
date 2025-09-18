@@ -1,0 +1,75 @@
+[gd_scene load_steps=8 format=3 uid="uid://dipxuitfpy1ab"]
+
+[ext_resource type="Script" uid="uid://cgrp2ysk7sdjj" path="res://Enemies/spider.gd" id="1_ttiju"]
+[ext_resource type="Texture2D" uid="uid://bnmjjrkcnfgf5" path="res://Assets/Enemies/spider.png" id="2_ttiju"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sdkqh"]
+radius = 9.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ih1lv"]
+radius = 9.0
+
+[sub_resource type="Animation" id="Animation_sdkqh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_cjpfl"]
+resource_name = "idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 0.8), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ih1lv"]
+_data = {
+&"RESET": SubResource("Animation_sdkqh"),
+&"idle": SubResource("Animation_cjpfl")
+}
+
+[node name="Spider" type="CharacterBody2D"]
+texture_filter = 1
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_ttiju")
+metadata/cost = 1
+
+[node name="AttackArea2D" type="Area2D" parent="."]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea2D"]
+shape = SubResource("CircleShape2D_sdkqh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ih1lv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -4)
+texture = ExtResource("2_ttiju")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_ih1lv")
+}
+autoplay = "idle"
+
+[connection signal="body_entered" from="AttackArea2D" to="." method="_on_attack_area_2d_body_entered"]

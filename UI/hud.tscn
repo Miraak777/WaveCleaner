@@ -1,0 +1,82 @@
+[gd_scene load_steps=6 format=3 uid="uid://ciogdts3gadbl"]
+
+[ext_resource type="Script" uid="uid://bcrybdmhjtf3s" path="res://UI/hud.gd" id="1_546lt"]
+[ext_resource type="Texture2D" uid="uid://dkyqursaxfr01" path="res://Assets/UI/ui_skillbar.png" id="1_rbyyf"]
+[ext_resource type="Texture2D" uid="uid://bjkxw24fppq6v" path="res://Assets/UI/ui_healthbar.png" id="3_en2x2"]
+[ext_resource type="Texture2D" uid="uid://sww6ivite7aq" path="res://Assets/UI/ui_xpbar.png" id="4_7ihmi"]
+
+[sub_resource type="Theme" id="Theme_7ihmi"]
+
+[node name="HUD" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_546lt")
+
+[node name="SkillPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_top = -32.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="UiSkillbar" type="Sprite2D" parent="SkillPanel"]
+texture = ExtResource("1_rbyyf")
+
+[node name="SkillMarker1" type="Marker2D" parent="SkillPanel"]
+position = Vector2(-106, -3)
+
+[node name="SkillMarker2" type="Marker2D" parent="SkillPanel"]
+position = Vector2(-70, -3)
+
+[node name="SkillMarker3" type="Marker2D" parent="SkillPanel"]
+position = Vector2(-34, -3)
+
+[node name="SkillMarker4" type="Marker2D" parent="SkillPanel"]
+position = Vector2(2, -3)
+
+[node name="SkillMarker5" type="Marker2D" parent="SkillPanel"]
+position = Vector2(38, -3)
+
+[node name="SkillMarker6" type="Marker2D" parent="SkillPanel"]
+position = Vector2(74, -3)
+
+[node name="HealthBar" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 214.0
+offset_top = 318.0
+offset_right = 282.0
+offset_bottom = 321.0
+value = 100.0
+texture_progress = ExtResource("3_en2x2")
+
+[node name="XPBar" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 358.0
+offset_top = 318.0
+offset_right = 426.0
+offset_bottom = 321.0
+value = 100.0
+fill_mode = 1
+texture_progress = ExtResource("4_7ihmi")
+
+[node name="LevelLabel" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 310.0
+offset_top = 310.0
+offset_right = 329.0
+offset_bottom = 333.0
+theme = SubResource("Theme_7ihmi")
+theme_override_font_sizes/font_size = 12
+text = "0"
+horizontal_alignment = 1
