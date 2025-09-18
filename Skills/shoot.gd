@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var projectile_scene: Resource = load("res://Skills/player_projectile.tscn")
+@export var projectile_scene: Resource = load(consts.path_to_player_projectile)
 @export var damage: float = 5
 @export var projectile_speed: float = 200
 @export var attack_range: float = 200
