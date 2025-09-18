@@ -266,7 +266,7 @@ texture_region_size = Vector2i(32, 32)
 tile_size = Vector2i(32, 32)
 sources/0 = SubResource("TileSetAtlasSource_dbkse")
 
-[node name="Base Level" type="Node2D"]
+[node name="Base Location" type="Node2D"]
 texture_filter = 1
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]

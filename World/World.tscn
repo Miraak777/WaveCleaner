@@ -1,17 +1,17 @@
 [gd_scene load_steps=8 format=3 uid="uid://bllm81n4gqe4w"]
 
 [ext_resource type="Script" uid="uid://3t1st0wp6l3n" path="res://World/world.gd" id="1_il6x7"]
-[ext_resource type="PackedScene" uid="uid://btxl3826eavfk" path="res://World/Levels/base_level.tscn" id="2_o14yy"]
+[ext_resource type="PackedScene" uid="uid://btxl3826eavfk" path="res://World/Locations/base_location.tscn" id="2_o14yy"]
 [ext_resource type="PackedScene" uid="uid://cgba5yo5yv5u5" path="res://Player/player.tscn" id="3_04mge"]
 [ext_resource type="PackedScene" uid="uid://ckodr6kgsx17l" path="res://Game Master/game_master.tscn" id="4_eue43"]
 [ext_resource type="Script" uid="uid://wguboneqd5dd" path="res://Game Master/StageData.gd" id="5_04mge"]
 [ext_resource type="Resource" uid="uid://divtrcaqdi5wv" path="res://Game Master/Stages/Stage 1.tres" id="6_eue43"]
-[ext_resource type="PackedScene" uid="uid://b6ao27sndyno0" path="res://ui/death_popup.tscn" id="7_eue43"]
+[ext_resource type="PackedScene" uid="uid://b6ao27sndyno0" path="res://UI/death_popup.tscn" id="7_eue43"]
 
 [node name="World" type="Node"]
 script = ExtResource("1_il6x7")
 
-[node name="Base Level" parent="." instance=ExtResource("2_o14yy")]
+[node name="Base Location" parent="." instance=ExtResource("2_o14yy")]
 
 [node name="Player" parent="." instance=ExtResource("3_04mge")]
 
