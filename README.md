@@ -1,8 +1,6 @@
 # WaveCleaner
 WaveCleaner is a game in survival-like genre. Created for training purposes and demonstration of skills.
 # GDD
-## Оглавление
-- [Игровые механики](#игровые-механики)
 ## Игровые механики
 ### Мир
 Сцена, в которой игрок управляет главным героем и сражается с волнами врагов. Мир сочетает в себе все необходимые сцены для игрового процесса.

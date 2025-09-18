@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b6ao27sndyno0"]
 
-[ext_resource type="Script" uid="uid://dqret6vpy4knq" path="res://ui/death_popup.gd" id="1_fe7q6"]
+[ext_resource type="Script" uid="uid://dqret6vpy4knq" path="res://UI/death_popup.gd" id="1_fe7q6"]
 [ext_resource type="Texture2D" uid="uid://dxj35m8037l2a" path="res://Assets/UI/popup_panel.png" id="1_pvkur"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pvkur"]
